@@ -6,11 +6,13 @@ html {
   padding: 0px;
   border: none;
   outline: none;
-  font-family: "Poppins", sans-serif;
+  font-family: $font-secondary;
+  box-sizing: border-box;
 }
 button {
   cursor: pointer;
   outline: none;
+  background: transparent;
   &:focus {
     outline: none;
   }
@@ -43,14 +45,15 @@ input::-webkit-inner-spin-button {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: $font-secondary, sans-serif;
   font-size: 14px;
   color: $black;
   line-height: 1.7em;
   font-weight: 400;
-  background: $white-bg;
+  background: $white;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
+  background: $white;
 }
 body.active {
   overflow: hidden;
@@ -60,19 +63,6 @@ a {
   cursor: pointer;
   color: #000;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  position: relative;
-  font-weight: normal;
-  margin: 0px;
-  background: none;
-  line-height: 1.6em;
-}
-
 
 ul,
 li {

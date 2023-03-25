@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 /* Typography */
 h1 {
-  font-size: 54px;
+  font-size: 52px;
 }
 h2 {
   font-size: 48px;
@@ -28,9 +29,9 @@ h5,
 h6 {
   font-family: $font-primary;
   font-weight: 700;
+  line-height: 1.2em;
 }
 
 p {
-  position: relative;
   line-height: 1.8em;
 }
