@@ -545,6 +545,10 @@ li {
   line-height: 1;
 }
 
+.popup {
+  display: none;
+}
+
 .footer {
   background: #f9f9f9;
   margin-top: 110px;
