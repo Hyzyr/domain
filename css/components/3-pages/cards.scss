@@ -1,0 +1,36 @@
+.card {
+  &Brand {
+    background: $white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+    &__image {
+      .ratioImage {
+        padding-bottom: 75%;
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      padding: 6px 22px 30px 22px;
+      gap: 10px;
+
+      &-title {
+        color: $black-4;
+        font-family: $font-primary;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 1.4;
+      }
+      &-para {
+        font-family: $font-secondary;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.2;
+        color: rgba($black-primary, 0.8);
+      }
+    }
+  }
+}
