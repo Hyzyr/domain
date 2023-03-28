@@ -14,6 +14,8 @@
 //   }
 // };
 
+///
+///
 /// slick slider
 const slickSettings = {
   companies: {
@@ -69,6 +71,7 @@ const slickSettings = {
     ],
   },
 };
+
 const getSlickSettings = (settings) => {
   return slickSettings[settings] ?? {};
 };
@@ -76,4 +79,29 @@ const slickSliders = document.querySelectorAll(".slickSlider");
 slickSliders.forEach((slider) => {
   const settings = slider.getAttribute("data-slick") ?? null;
   $(slider).slick(getSlickSettings(settings));
+});
+
+///
+///
+/// tabEvents
+
+const toggleBody = (isClose) => {
+  if (isClose) document.body.classList.add("active");
+  else document.body.classList.remove("active");
+};
+document.querySelectorAll(`[data-event="tabEvent"]`).forEach((eventBtn) => {
+  console.log("eventBtn", eventBtn);
+  const tab = document.querySelector(eventBtn.getAttribute("data-tab"));
+  if (tab) {
+    eventBtn.onclick = () => {
+      tab.classList.toggle("active");
+      toggleBody(tab.classList.contains("active"));
+    };
+    tab.onclick = (e) => {
+      if (e.target === e.currentTarget) {
+        tab.classList.toggle("active");
+        toggleBody(tab.classList.contains("active"));
+      }
+    };
+  }
 });
