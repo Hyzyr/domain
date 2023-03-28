@@ -28,7 +28,12 @@
                   <a href="#" class="nav__inner-link">Browse by Style</a>
                 </div>
                 <div class="nav__inner-group">
-                  <a href="#" class="nav__inner-link _ico">
+                  <a
+                    href="#"
+                    class="nav__inner-link _ico"
+                    data-event="tabEvent"
+                    data-tab="#popupSubscribe"
+                  >
                     <svg
                       width="24"
                       height="23"
@@ -43,7 +48,12 @@
                     </svg>
                     Favorite
                   </a>
-                  <a href="#" class="nav__inner-link _ico">
+                  <a
+                    href="#"
+                    class="nav__inner-link _ico"
+                    data-event="tabEvent"
+                    data-tab="#popupRegister"
+                  >
                     <svg
                       width="25"
                       height="25"
@@ -87,13 +97,7 @@
                 <div class="boxSection__search-input">
                   <div class="input input--primary input--buttonRight">
                     <input type="text" placeholder="Search your term...." />
-                    <button
-                      class="button button--primary"
-                      data-event="tabEvent"
-                      data-tab="#popupSubscribe"
-                    >
-                      Search
-                    </button>
+                    <button class="button button--primary">Search</button>
                   </div>
                 </div>
                 <div class="boxSection__search-filter">
@@ -485,13 +489,13 @@
         </div>
       </div>
     </div>
-    <div class="popup " id="popupSubscribe2">
+    <div class="popup" id="popupRegister">
       <div class="popup__inner">
         <button
           type="button"
           class="popup__inner-close"
           data-event="tabEvent"
-          data-tab="#popupSubscribe"
+          data-tab="#popupRegister"
         >
           <span class="custIcon custIcon--cross"></span>
         </button>
@@ -505,7 +509,9 @@
             the majority have suffered alteration in some form, by injected
             humour
           </p>
-          <div class="popup__inner-domains">
+        </div>
+        <div class="popup__inner-domains">
+          <div class="popup__inner-domains-row">
             <div class="radioButton">
               <input type="radio" name="domain" />
               <label

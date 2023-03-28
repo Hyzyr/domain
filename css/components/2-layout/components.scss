@@ -536,6 +536,7 @@
         opacity: 1;
         width: 1.2em;
         height: 1.2em;
+        margin-left: 0.5em;
       }
     }
   }
@@ -543,7 +544,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em 1.5em;
+    padding: 1em;
     border: 2px solid transparent;
     background: $white-1;
     border-radius: 3em;
@@ -560,12 +561,12 @@
   .custIcon {
     border-radius: 50%;
     background: $primary;
-    margin-left: 0.5em;
     font-size: inherit;
     opacity: 0;
     width: 0;
     height: 0;
     transition: 0.3s ease-out;
+    flex-shrink: 0;
 
     &::after {
       border-color: $black;

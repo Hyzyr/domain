@@ -815,6 +815,7 @@ li {
   opacity: 1;
   width: 1.2em;
   height: 1.2em;
+  margin-left: 0.5em;
 }
 .radioButton label {
   display: -webkit-box;
@@ -826,7 +827,7 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1em 1.5em;
+  padding: 1em;
   border: 2px solid transparent;
   background: #f8f8f8;
   border-radius: 3em;
@@ -842,13 +843,14 @@ li {
 .radioButton .custIcon {
   border-radius: 50%;
   background: #b5ed3d;
-  margin-left: 0.5em;
   font-size: inherit;
   opacity: 0;
   width: 0;
   height: 0;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .radioButton .custIcon::after {
   border-color: #101010;
@@ -1242,6 +1244,22 @@ li {
   max-width: 500px;
   margin: 0 auto;
   margin-bottom: 15px;
+}
+.popup__inner-domains {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.popup__inner-domains-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -12px -15px;
+}
+.popup__inner-domains .radioButton {
+  margin: 12px 15px;
+  width: calc(33.3% - 30px);
 }
 .popup.active {
   opacity: 1;

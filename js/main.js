@@ -84,16 +84,15 @@ slickSliders.forEach((slider) => {
 ///
 ///
 /// tabEvents
-
 const toggleBody = (isClose) => {
   if (isClose) document.body.classList.add("active");
   else document.body.classList.remove("active");
 };
 document.querySelectorAll(`[data-event="tabEvent"]`).forEach((eventBtn) => {
-  console.log("eventBtn", eventBtn);
   const tab = document.querySelector(eventBtn.getAttribute("data-tab"));
   if (tab) {
-    eventBtn.onclick = () => {
+    eventBtn.onclick = (e) => {
+      e.preventDefault();
       tab.classList.toggle("active");
       toggleBody(tab.classList.contains("active"));
     };
