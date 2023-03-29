@@ -9,6 +9,15 @@
       padding: 40px 0 30px 0;
       border-bottom: 1px solid $white-2;
 
+      .logo {
+        display: flex;
+        width: 135px;
+        height: auto;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
       &-group {
         display: flex;
         justify-content: space-between;
@@ -31,12 +40,10 @@
     &-body {
       display: flex;
       flex-wrap: wrap;
-      gap: 40px;
       padding: 40px 0;
 
       &-subscribe {
-        width: 100%;
-        max-width: 290px;
+        width: 290px;
         h3 {
           color: $black;
           font-family: $font-primary;
@@ -45,6 +52,13 @@
           font-size: 24px;
           line-height: 1.2;
           margin-bottom: 30px;
+        }
+        .input {
+          font-size: 16px;
+
+          .button {
+            font-size: 26px;
+          }
         }
       }
     }
@@ -87,7 +101,7 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    width: 100%;
+    width: calc(100% - 340px);
     max-width: 600px;
     margin: 0 auto;
 
@@ -142,6 +156,138 @@
           opacity: 1;
           width: 80%;
           background: rgba($secondary, 0.8);
+        }
+      }
+    }
+  }
+}
+
+@mixin footer-1160 {
+  .footer {
+    &__links {
+      margin: 0 0 0 auto;
+    }
+  }
+}
+
+@mixin footer-940 {
+  .footer {
+    &__inner {
+      &-header {
+        padding: 20px 0;
+
+        .logo {
+          width: 120px;
+        }
+        &-group {
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+      &-body {
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 0;
+
+        &-subscribe {
+          width: 90%;
+          max-width: 550px;
+          align-self: center;
+
+          h3 {
+            text-align: center;
+          }
+        }
+      }
+    }
+    &__links {
+      width: 100%;
+      margin: unset;
+      max-width: unset;
+      justify-content: space-evenly;
+      padding: 40px 0;
+      border-bottom: 1px solid $white-2;
+    }
+  }
+}
+
+@mixin footer-768 {
+  .footer {
+    &__links {
+      justify-content: space-between;
+    }
+    &__footer {
+      &-tos {
+        gap: 20px;
+        &-link {
+          font-size: 13px;
+          color: $black-5;
+        }
+      }
+
+      &-social {
+        .button {
+          color: $black-5;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@mixin footer-580 {
+  .footer {
+    &__inner {
+      &-header {
+        .logo {
+          width: 100px;
+        }
+
+        &-group {
+          span {
+            font-size: 12px;
+            margin-right: 1em;
+          }
+          .button {
+            font-size: 12px;
+            min-width: unset;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin footer-460 {
+  .footer {
+    &__inner {
+      &-header {
+        .logo {
+          width: 90px;
+        }
+        &-group {
+          span {
+            display: none;
+          }
+        }
+      }
+      &-body {
+        &-subscribe {
+          width: 100%;
+        }
+      }
+    }
+    &__links {
+      gap: 10px;
+    }
+    &__footer {
+      flex-direction: column-reverse;
+      align-items: center;
+
+      &-social {
+        .button {
+          color: $black-secondary;
+          font-size: 22px;
         }
       }
     }

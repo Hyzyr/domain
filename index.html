@@ -76,29 +76,34 @@
             <img src="images/main-background.png" alt="" />
           </div>
           <div class="hero__inner">
-            <div class="hero__inner-content">
-              <h1>
-                Let AI create your dream
-                <span class="_underline">business brand</span> in seconds
-              </h1>
-              <ul>
-                <li>Perfect business name.</li>
-                <li>Matching available domain.</li>
-                <li>Memorable logo design.</li>
-              </ul>
-              <div class="input input--primary input--buttonRight">
-                <input
-                  type="text"
-                  placeholder="Search by industry, keyword or concept"
-                />
-                <button class="button button--primary">Search</button>
+            <h1>
+              Let AI create your dream
+              <span class="_underline">business brand</span>
+              <span>in seconds</span>
+            </h1>
+            <div class="hero__inner-body">
+              <div class="hero__inner-body-banner">
+                <img src="images/home/banner.png" alt="" />
               </div>
-              <div class="hero__inner-content-counter">
-                <strong>1678+</strong> Brands created in last 24 hrs
+              <div class="hero__inner-body-content">
+                <ul>
+                  <li>Perfect business name.</li>
+                  <li>Matching available domain.</li>
+                  <li>Memorable logo design.</li>
+                </ul>
+                <div
+                  class="input input--primary input--buttonRight _wideButton"
+                >
+                  <input
+                    type="text"
+                    placeholder="Search by industry, keyword or concept"
+                  />
+                  <button class="button button--primary">Search</button>
+                </div>
+                <div class="hero__inner-body-content-counter">
+                  <strong>1678+</strong> Brands created in last 24 hrs
+                </div>
               </div>
-            </div>
-            <div class="hero__inner-banner">
-              <img src="images/home/banner.png" alt="" />
             </div>
           </div>
         </div>
@@ -290,7 +295,7 @@
                   without coding. Build your next consultancy website within few
                   minutes.
                 </p>
-                <a href="#"><span></span> LEARN MORE</a>
+                <a href="#" class="learnMore"><span></span> LEARN MORE</a>
               </li>
               <li class="build__inner-list-item">
                 <strong>02.</strong>
@@ -300,7 +305,7 @@
                   without coding. Build your next consultancy website within few
                   minutes.
                 </p>
-                <a href="#"><span></span> LEARN MORE</a>
+                <a href="#" class="learnMore"><span></span> LEARN MORE</a>
               </li>
               <li class="build__inner-list-item">
                 <strong>03.</strong>
@@ -310,7 +315,7 @@
                   without coding. Build your next consultancy website within few
                   minutes.
                 </p>
-                <a href="#"><span></span> LEARN MORE</a>
+                <a href="#" class="learnMore"><span></span> LEARN MORE</a>
               </li>
             </ul>
           </div>
@@ -329,7 +334,7 @@
           <div class="generate__inner">
             <div class="generate__inner-content">
               <h2>Generate your <br />business name with AI</h2>
-              <div class="input input--primary input--buttonRight">
+              <div class="input input--primary input--buttonRight _wideButton">
                 <input
                   type="text"
                   placeholder="Search by industry, keyword or concept"
@@ -362,27 +367,72 @@
               </p>
             </div>
             <div class="feedbacks__slider">
-              <div class="feedbacks__slider-image">
-                <img src="images/home/smiling-man.png" alt="" />
+              <div
+                class="feedbacks__slider-images slickSlider"
+                id="feedbacksImages"
+                data-slick="feedbacksImages"
+              >
+                <div class="feedbacks__slider-image">
+                  <img src="images/home/smiling-man.png" alt="smiling-man" />
+                </div>
+                <div class="feedbacks__slider-image">
+                  <img src="images/home/smiling-man-2.jpg" alt="smiling-man" />
+                </div>
+                <div class="feedbacks__slider-image">
+                  <img src="images/home/smiling-man-1.jpg" alt="smiling-man" />
+                </div>
               </div>
-              <div class="feedbacks__slider-content">
-                <h5 class="feedbacks__slider-content-title">
-                  <div class="quotes">
-                    <img src="images/ico/quotes.svg" alt="" />
+              <div class="feedbacks__slider-contents">
+                <div
+                  class="slickSlider"
+                  id="feedbacksContent"
+                  data-slick="feedbacksContent"
+                >
+                  <div class="feedbacks__slider-content">
+                    <h5 class="feedbacks__slider-content-title">
+                      <div class="quotes">
+                        <img src="images/ico/quotes.svg" alt="" />
+                      </div>
+                      “They are able to help a startup like mine scale and are
+                      very responsive to all our unique needs”
+                    </h5>
+                    <div class="feedbacks__slider-content-user">
+                      <strong>— Yacob Sudarmaji</strong>
+                      <span>Product Manager, Qnet</span>
+                    </div>
                   </div>
-                  “They are able to help a startup like mine scale and are very
-                  responsive to all our unique needs”
-                </h5>
-                <div class="feedbacks__slider-content-user">
-                  <strong>— Yacob Sudarmaji</strong>
-                  <span>Product Manager, Qnet</span>
+                  <div class="feedbacks__slider-content">
+                    <h5 class="feedbacks__slider-content-title">
+                      <div class="quotes">
+                        <img src="images/ico/quotes.svg" alt="" />
+                      </div>
+                      “Very responsive to all our unique needs, They are able to
+                      help a startup like mine scale and are”
+                    </h5>
+                    <div class="feedbacks__slider-content-user">
+                      <strong>— Daboo Djambo</strong>
+                      <span>General Manager</span>
+                    </div>
+                  </div>
+                  <div class="feedbacks__slider-content">
+                    <h5 class="feedbacks__slider-content-title">
+                      <div class="quotes">
+                        <img src="images/ico/quotes.svg" alt="" />
+                      </div>
+                      “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Inventore ex est, soluta eius dolorum eaque repudiandae
+                      pariatur id””
+                    </h5>
+                    <div class="feedbacks__slider-content-user">
+                      <strong>— Alan Walker</strong>
+                      <span>Director, CEO</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="feedbacks__slider-dots">
-                  <span class="active"></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+                <div
+                  class="feedbacks__slider-dots"
+                  id="feedbacksContentDots"
+                ></div>
               </div>
             </div>
             <div class="feedbacks__footer">
@@ -437,10 +487,10 @@
             <div class="footer__inner-body">
               <div class="footer__inner-body-subscribe">
                 <h3>Subscribe to our newsletter</h3>
-                <div class="input input--underline">
-                  <input type="text" />
-                  <button class="button button--ico">
-                    <span class="custIco custIco--rightArr"></span>
+                <div class="input input--underline input--buttonRight">
+                  <input type="text" placeholder="Email address" />
+                  <button class="button button--primary button--ico _smIco">
+                    <span class="custIcon custIcon--right"></span>
                   </button>
                 </div>
               </div>
