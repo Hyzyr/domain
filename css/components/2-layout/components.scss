@@ -430,6 +430,7 @@
   font-size: 16px;
   height: 0.8em;
   width: 0.8em;
+  color: inherit;
 
   &--left {
     &::before {
@@ -441,8 +442,8 @@
       width: 75%;
       height: 75%;
       background: transparent;
-      border-left: 2px solid $secondary;
-      border-bottom: 2px solid $secondary;
+      border-left: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
       transform: translate(-25%, -50%) rotate(45deg);
     }
   }
@@ -456,8 +457,8 @@
       width: 75%;
       height: 75%;
       background: transparent;
-      border-right: 2px solid $secondary;
-      border-top: 2px solid $secondary;
+      border-right: 2px solid currentColor;
+      border-top: 2px solid currentColor;
       transform: translate(-75%, -50%) rotate(45deg);
     }
   }

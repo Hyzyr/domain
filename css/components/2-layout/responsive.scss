@@ -6,7 +6,9 @@
     padding: 0 40px;
   }
   @include footer-1160;
+  @include footer-1160;
   @include index-1160;
+  @include brand-blog-1160;
   @include boxSection-1160;
 }
 @media (max-width: 1025px) {
@@ -15,6 +17,7 @@
   }
   @include header-1025;
   @include boxSection-1025;
+  @include brand-blog-1025;
   @include index-1025;
 }
 
@@ -23,6 +26,7 @@
     padding: 0 25px;
   }
   @include footer-940;
+  @include brand-blog-940;
   @include index-940;
 }
 @media (max-width: 768px) {
@@ -31,16 +35,19 @@
   }
   @include header-768;
   @include footer-768;
+  @include brand-blog-768;
   @include boxSection-768;
   @include index-768;
 }
 @media (max-width: 580px) {
   @include footer-580;
+  @include brand-blog-580;
   @include boxSection-580;
   @include index-580;
 }
 @media (max-width: 460px) {
   @include footer-460;
   @include boxSection-460;
+  @include brand-blog-460;
   @include index-460;
 }

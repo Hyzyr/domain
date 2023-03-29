@@ -74,9 +74,12 @@ const slickSettings = {
   },
   default: {
     slidesToShow: 3,
-    speed: 1500,
+    speed: 600,
     arrows: true,
     dots: false,
+    infinite: false,
+    prevArrow: $("#brandSlider .prevArrow"),
+    nextArrow: $("#brandSlider .nextArrow"),
     responsive: [
       {
         breakpoint: 1025,
