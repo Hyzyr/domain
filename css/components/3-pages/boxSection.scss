@@ -1,5 +1,5 @@
 .boxSection {
-  padding: 165px 0 20px 0;
+  padding: 165px 0 60px 0;
   &__inner {
     padding: 60px 70px;
     background: $white;
@@ -14,6 +14,8 @@
       margin-bottom: 65px;
 
       &-back {
+        display: flex;
+        align-items: center;
         position: absolute;
         left: 0;
         top: 1em;
@@ -25,6 +27,12 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 1;
+
+        svg {
+          width: 0.8em;
+          height: 0.8em;
+          margin-right: 0.8em;
+        }
       }
       h1 {
         color: $black-secondary;
@@ -134,7 +142,11 @@
         &:last-child {
           align-items: flex-end;
         }
+        &._alignBottom {
+          align-self: flex-end;
+        }
 
+        h1,
         h3 {
           color: $black-secondary;
           font-family: $font-primary;
@@ -165,12 +177,200 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 30px 45px;
+      padding: 20px 0;
 
       .button {
         flex: 1 0 0;
         &--primary {
           width: 100%;
           flex: unset;
+        }
+      }
+    }
+  }
+}
+
+@mixin boxSection-1160 {
+  .boxSection {
+    &__brand {
+      &-header {
+        &-column {
+          h1,
+          h3 {
+            font-size: 44px;
+          }
+          strong {
+            font-size: 22px;
+          }
+        }
+      }
+      &-badges {
+        gap: 20px;
+      }
+      &-actions {
+        gap: 20px;
+
+        .button {
+          flex: unset;
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+}
+
+@mixin boxSection-1025 {
+  .boxSection {
+    padding: 135px 0 60px 0;
+    &__inner {
+      padding: 40px;
+    }
+    &__brand {
+      &-badges {
+        gap: 10px;
+      }
+      &-header {
+        &-column {
+          h1,
+          h3 {
+            font-size: 40px;
+          }
+          strong {
+            font-size: 20px;
+          }
+        }
+      }
+      &-actions {
+        padding: 10px 0;
+        gap: 20px 10px;
+
+        .button {
+          flex: unset;
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+}
+@mixin boxSection-768 {
+  .boxSection {
+    padding: 100px 0 40px 0;
+
+    &__inner {
+      padding: 35px 30px;
+    }
+    &__brand {
+      &-badges {
+        gap: 6px;
+        .badge {
+          font-size: 14px;
+        }
+      }
+      &-header {
+        &-row {
+          padding: 15px 0;
+        }
+        &-column {
+          h1,
+          h3 {
+            font-size: 36px;
+          }
+          strong {
+            font-size: 18px;
+          }
+        }
+      }
+      &-actions {
+        gap: 10px;
+
+        .button {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+@mixin boxSection-580 {
+  .boxSection {
+    &__inner {
+      padding: 35px 20px;
+      &-header {
+        &-back {
+          font-size: 16px;
+        }
+        &._buttononly {
+          margin-bottom: 25px;
+        }
+      }
+    }
+    &__brand {
+      &-header {
+        &-row {
+          flex-direction: column;
+          border: 0;
+          padding: 0;
+
+          &:first-child {
+            flex-direction: column-reverse;
+          }
+        }
+        &-column {
+          justify-content: space-between;
+          padding: 15px 0;
+          width: 100%;
+          border-bottom: 1px solid $white-2;
+          h1 {
+            font-size: 32px;
+          }
+          h3 {
+            font-size: 26px;
+          }
+          strong {
+            font-size: 18px;
+          }
+        }
+      }
+      &-actions {
+        gap: 10px;
+
+        .button {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+@mixin boxSection-460 {
+  .boxSection {
+    &__inner {
+      padding: 20px 15px;
+      &-header {
+        &-back {
+          font-size: 14px;
+        }
+      }
+    }
+    &__brand {
+      &-header {
+        &-column {
+          padding: 10px 0;
+          h1 {
+            font-size: 26px;
+          }
+          h3 {
+            font-size: 26px;
+          }
+          strong {
+            font-size: 16px;
+            margin-top: 8px;
+          }
+        }
+      }
+      &-actions {
+        gap: 10px;
+
+        .button {
+          font-size: 14px;
         }
       }
     }

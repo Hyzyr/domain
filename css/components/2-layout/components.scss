@@ -238,6 +238,16 @@
       }
     }
   }
+  &--border {
+    border-color: $black-secondary;
+    border-radius: 100px;
+
+    &:hover {
+      border-color: $secondary;
+      color: $secondary;
+      background: rgba($secondary, 0.03);
+    }
+  }
   &--iconright {
     svg {
       width: 0.6em;
