@@ -1014,6 +1014,11 @@
         }
       }
     }
+    &--bg {
+      .hero__bg {
+        height: 450px;
+      }
+    }
   }
   .latest {
     padding: 60px 0 70px;

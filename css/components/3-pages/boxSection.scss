@@ -192,6 +192,14 @@
 
 @mixin boxSection-1160 {
   .boxSection {
+    &__inner {
+      &-header {
+        margin-bottom: 50px;
+        h1 {
+          font-size: 44px;
+        }
+      }
+    }
     &__brand {
       &-header {
         &-column {
@@ -216,6 +224,20 @@
         }
       }
     }
+    &__search {
+      &-input {
+        .input {
+          font-size: 18px;
+        }
+      }
+    }
+    &__form {
+      &-column {
+        .input {
+          font-size: 18px;
+        }
+      }
+    }
   }
 }
 
@@ -224,6 +246,27 @@
     padding: 135px 0 60px 0;
     &__inner {
       padding: 40px;
+
+      &-header {
+        margin-bottom: 40px;
+        h1 {
+          font-size: 40px;
+        }
+      }
+      &-footer {
+        margin-top: 50px;
+      }
+    }
+    &__form {
+      &-row {
+        gap: 15px;
+      }
+      &-column {
+        gap: 15px;
+        .input {
+          font-size: 16px;
+        }
+      }
     }
     &__brand {
       &-badges {
@@ -252,12 +295,63 @@
     }
   }
 }
+@mixin boxSection-940 {
+  .boxSection {
+    &__inner {
+      &-header {
+        &-back {
+          position: unset;
+          align-self: flex-start;
+          margin-bottom: 1.5em;
+        }
+      }
+    }
+    &__form {
+      &-row {
+        flex-direction: column;
+        gap: 15px;
+      }
+      &-column {
+        gap: 15px;
+        .input {
+          font-size: 16px;
+        }
+      }
+    }
+    &__search {
+      &-filter {
+        justify-content: center;
+        .input {
+          width: calc(33.3% - 12px);
+        }
+      }
+    }
+  }
+}
 @mixin boxSection-768 {
   .boxSection {
     padding: 100px 0 40px 0;
 
     &__inner {
       padding: 35px 30px;
+
+      &-header {
+        h1 {
+          font-size: 36px;
+        }
+      }
+      &-footer {
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 15px;
+        strong {
+          font-weight: 400;
+          color: $black-5;
+        }
+        .button {
+          width: 100%;
+        }
+      }
     }
     &__brand {
       &-badges {
@@ -288,6 +382,20 @@
         }
       }
     }
+    &__search {
+      &-input {
+        margin-bottom: 35px;
+        .input {
+          font-size: 16px;
+        }
+      }
+      &-filter {
+        justify-content: center;
+        .input {
+          width: calc(50% - 12px);
+        }
+      }
+    }
   }
 }
 @mixin boxSection-580 {
@@ -295,6 +403,12 @@
     &__inner {
       padding: 35px 20px;
       &-header {
+        h1 {
+          font-size: 28px;
+        }
+        strong {
+          font-size: 18px;
+        }
         &-back {
           font-size: 16px;
         }
@@ -338,6 +452,21 @@
         }
       }
     }
+    &__search {
+      &-input {
+        .input {
+          font-size: 14px;
+        }
+      }
+      &-filter {
+        margin: 0;
+        justify-content: center;
+        .input {
+          font-size: 13px;
+          width: 100%;
+        }
+      }
+    }
   }
 }
 @mixin boxSection-460 {
@@ -345,7 +474,20 @@
     &__inner {
       padding: 20px 15px;
       &-header {
+        h1 {
+          font-size: 24px;
+        }
+        strong {
+          font-size: 16px;
+        }
         &-back {
+          font-size: 14px;
+        }
+      }
+    }
+    &__form {
+      &-column {
+        .input {
           font-size: 14px;
         }
       }
