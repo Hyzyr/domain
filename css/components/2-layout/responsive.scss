@@ -1,12 +1,13 @@
 @media (max-width: 1280px) {
   @include index-1280;
+  @include popup-1280;
 }
 @media (max-width: 1160px) {
   .autoContainer {
     padding: 0 40px;
   }
   @include footer-1160;
-  @include footer-1160;
+  @include popup-1160;
   @include index-1160;
   @include brand-blog-1160;
   @include searchSection-1160;
@@ -17,6 +18,7 @@
     padding: 0 30px;
   }
   @include header-1025;
+  @include popup-1025;
   @include boxSection-1025;
   @include brand-blog-1025;
   @include searchSection-1025;
@@ -28,6 +30,7 @@
     padding: 0 25px;
   }
   @include footer-940;
+  @include popup-940;
   @include brand-blog-940;
   @include boxSection-940;
   @include searchSection-940;
@@ -38,6 +41,7 @@
     padding: 0 15px;
   }
   @include header-768;
+  @include popup-768;
   @include footer-768;
   @include brand-blog-768;
   @include boxSection-768;
@@ -46,6 +50,7 @@
 }
 @media (max-width: 580px) {
   @include footer-580;
+  @include popup-580;
   @include brand-blog-580;
   @include boxSection-580;
   @include searchSection-580;
@@ -53,6 +58,7 @@
 }
 @media (max-width: 460px) {
   @include footer-460;
+  @include popup-460;
   @include boxSection-460;
   @include brand-blog-460;
   @include searchSection-460;

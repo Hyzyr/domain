@@ -882,6 +882,7 @@ li {
 .radioButton {
   cursor: pointer;
   position: relative;
+  font-size: 24px;
 }
 .radioButton input {
   cursor: pointer;
@@ -923,10 +924,10 @@ li {
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
   color: #33354d;
+  font-size: inherit;
   font-family: "Urbanist", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
   line-height: 140%;
 }
 .radioButton .custIcon {
@@ -1005,6 +1006,10 @@ li {
   width: 70%;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+}
+
+.noBreak {
+  white-space: nowrap;
 }
 
 .footer {
@@ -1469,6 +1474,13 @@ li {
   max-width: 500px;
   margin: 0 auto;
   margin-bottom: 15px;
+}
+.popup__inner-content .input input {
+  border-width: 1px;
+  border-color: rgba(16, 16, 16, 0.6);
+}
+.popup__inner-content .input input:focus {
+  border-color: #1d263a;
 }
 .popup__inner-domains {
   max-width: 900px;
@@ -2865,6 +2877,18 @@ li {
   width: calc(33.3% - 30px);
   margin: 15px;
 }
+.searchSection__inner-footer {
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.searchSection__inner-footer .button {
+  min-width: 220px;
+}
 
 @media (max-width: 1280px) {
   .hero {
@@ -2925,6 +2949,9 @@ li {
   .feedbacks__footer {
     margin-top: 90px;
   }
+  .popup__inner-domains .radioButton {
+    font-size: 18px;
+  }
 }
 @media (max-width: 1160px) {
   .autoContainer {
@@ -2933,11 +2960,17 @@ li {
   .footer__links {
     margin: 0 0 0 auto;
   }
-  .footer__links {
-    margin: 0 0 0 auto;
+  .popup__inner {
+    padding: 50px 50px 80px 50px;
+  }
+  .popup__inner-content h2 {
+    font-size: 36px;
+  }
+  .popup__inner-content .input {
+    font-size: 18px;
   }
   .hero__inner h1 {
-    font-size: 42px;
+    font-size: 44px;
   }
   .hero__inner-body-content .input {
     font-size: 14px;
@@ -2945,6 +2978,9 @@ li {
   }
   .hero__inner-body-banner {
     width: calc(55% - 20px);
+  }
+  .hero__info h1 {
+    font-size: 44px;
   }
   .latest__row {
     margin: 0 -10px;
@@ -3153,6 +3189,9 @@ li {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
+  .popup__inner-content h2 {
+    font-size: 28px;
+  }
   .boxSection {
     padding: 135px 0 60px 0;
   }
@@ -3245,6 +3284,9 @@ li {
     left: 100%;
     -webkit-transform: translate(10%, -50%);
             transform: translate(10%, -50%);
+  }
+  .hero__info h1 {
+    font-size: 40px;
   }
   .hero--bg .hero__bg {
     height: 450px;
@@ -3340,6 +3382,17 @@ li {
     padding: 40px 0;
     border-bottom: 1px solid #ededed;
   }
+  .popup__inner-content .input {
+    font-size: 16px;
+  }
+  .popup__inner-domains-row {
+    margin: -5px -10px;
+  }
+  .popup__inner-domains .radioButton {
+    font-size: 16px;
+    width: calc(33.3% - 10px);
+    margin: 10px 5px;
+  }
   .availability {
     padding: 60px 0;
   }
@@ -3392,6 +3445,9 @@ li {
     width: calc(50% - 30px);
     max-width: 390px;
     margin: 15px;
+  }
+  .hero--info {
+    padding-bottom: 30px;
   }
   .latest__row {
     -ms-flex-wrap: wrap;
@@ -3533,6 +3589,31 @@ li {
   .nav__inner {
     padding: 30px 15px;
   }
+  .popup__inner {
+    padding: 30px 30px 50px 30px;
+  }
+  .popup__inner-content h2 {
+    font-size: 24px;
+  }
+  .popup__inner-content .input {
+    font-size: 14px;
+  }
+  .popup__inner-content .checkbox__outer {
+    padding: 15px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .popup__inner-content .checkbox__outer label {
+    font-size: 14px;
+  }
+  .popup__inner-domains-row {
+    margin: -10px;
+  }
+  .popup__inner-domains .radioButton {
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
   .footer__links {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -3627,6 +3708,17 @@ li {
     top: 2%;
     width: 150%;
   }
+  .hero__info {
+    min-height: unset;
+    width: 90%;
+    max-width: 400px;
+  }
+  .hero__info h1 {
+    font-size: 36px;
+  }
+  .hero__info p {
+    font-size: 16px;
+  }
   .hero__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3681,6 +3773,9 @@ li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .hero--info {
+    padding-bottom: 20px;
   }
   .companies {
     padding: 30px 0 50px;
@@ -3765,6 +3860,20 @@ li {
   .footer__inner-header-group .button {
     font-size: 12px;
     min-width: unset;
+  }
+  .popup__inner-content p {
+    font-size: 14px;
+  }
+  .popup__inner-domains-row {
+    margin: -5px;
+  }
+  .popup__inner-domains .radioButton {
+    font-size: 14px;
+    width: calc(50% - 10px);
+    margin: 5px;
+  }
+  .popup__inner-domains .radioButton label {
+    padding: 0.8em 0.5em;
   }
   .availability__inner-row {
     max-width: 450px;
@@ -3889,6 +3998,15 @@ li {
   }
   .searchSection__inner-row .cardBrand__content-link .learnMore {
     font-size: 12px;
+  }
+  .hero--info {
+    padding-bottom: 15px;
+  }
+  .hero__info h1 {
+    font-size: 32px;
+  }
+  .hero__info p {
+    font-weight: 400;
   }
   .hero__inner h1 {
     font-size: 32px;
@@ -4077,6 +4195,17 @@ li {
   .footer__footer-social .button {
     color: #1d263a;
     font-size: 22px;
+  }
+  .popup__inner {
+    padding: 30px 20px 40px 20px;
+  }
+  .popup__inner-domains {
+    margin: -5px -3px;
+  }
+  .popup__inner .radioButton {
+    font-size: 13px;
+    width: calc(50% - 6px);
+    margin: 5px 3px;
   }
   .boxSection__inner {
     padding: 20px 15px;

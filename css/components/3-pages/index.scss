@@ -927,7 +927,7 @@
   .hero {
     &__inner {
       h1 {
-        font-size: 42px;
+        font-size: 44px;
       }
       &-body {
         &-content {
@@ -939,6 +939,11 @@
         &-banner {
           width: calc(55% - 20px);
         }
+      }
+    }
+    &__info {
+      h1 {
+        font-size: 44px;
       }
     }
   }
@@ -1014,6 +1019,11 @@
         }
       }
     }
+    &__info {
+      h1 {
+        font-size: 40px;
+      }
+    }
     &--bg {
       .hero__bg {
         height: 450px;
@@ -1084,6 +1094,11 @@
   }
 }
 @mixin index-940 {
+  .hero {
+    &--info {
+      padding-bottom: 30px;
+    }
+  }
   .latest {
     &__row {
       flex-wrap: wrap;
@@ -1230,6 +1245,17 @@
         width: 150%;
       }
     }
+    &__info {
+      min-height: unset;
+      width: 90%;
+      max-width: 400px;
+      h1 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
     &__inner {
       display: flex;
       flex-direction: column;
@@ -1272,6 +1298,9 @@
           }
         }
       }
+    }
+    &--info {
+      padding-bottom: 20px;
     }
   }
   .companies {
@@ -1352,6 +1381,17 @@
 }
 @mixin index-580 {
   .hero {
+    &--info {
+      padding-bottom: 15px;
+    }
+    &__info {
+      h1 {
+        font-size: 32px;
+      }
+      p {
+        font-weight: 400;
+      }
+    }
     &__inner {
       h1 {
         font-size: 32px;

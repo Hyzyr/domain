@@ -563,6 +563,7 @@
 .radioButton {
   cursor: pointer;
   position: relative;
+  font-size: 24px;
 
   input {
     cursor: pointer;
@@ -599,10 +600,10 @@
 
     //font
     color: $black-4;
+    font-size: inherit;
     font-family: $font-primary;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
     line-height: 140%;
   }
   .custIcon {
@@ -681,4 +682,7 @@
       }
     }
   }
+}
+.noBreak {
+  white-space: nowrap;
 }

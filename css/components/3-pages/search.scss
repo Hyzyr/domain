@@ -23,6 +23,15 @@
         margin: 15px;
       }
     }
+    &-footer {
+      margin-top: 90px;
+      display: flex;
+      justify-content: center;
+
+      .button {
+        min-width: 220px;
+      }
+    }
   }
 }
 @mixin searchSection-1160 {
