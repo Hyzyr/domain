@@ -362,6 +362,10 @@
     padding: 2em 4em 2em 2em;
     font-size: 14px;
     overflow: hidden;
+    border: 1px solid transparent;
+    background: $white-secondary;
+    transition: 0.3s ease-in;
+    box-shadow: 0px 0px 0px $white-secondary-2;
 
     p {
       //font
@@ -380,8 +384,7 @@
       font-size: 32px;
       line-height: 110%;
     }
-    &-ico,
-    &:after {
+    &-ico {
       position: absolute;
       display: flex;
       align-items: center;
@@ -393,21 +396,10 @@
       font-size: inherit;
       transform: translate(50%, 50%);
     }
-    &:before {
-      position: absolute;
-      content: "";
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      border-radius: inherit;
-      background: $white-secondary;
-      z-index: -2;
-    }
 
     &-ico {
       color: $black;
-      transition: 0.3s ease-out;
+      transition: 1s ease-out;
       font-size: 14px;
 
       svg {
@@ -415,33 +407,21 @@
         height: 0.8em;
       }
     }
-    &:after {
-      content: "";
-      border-radius: 50%;
-      width: 0em;
-      height: 0em;
-      background: rgba($black, 0.08);
-      transition: 0.3s ease-out;
-      z-index: -1;
-    }
 
     &:hover {
-      &:after {
-        width: 200vw;
-        height: 200vw;
-        transition: 0.8s ease-out 0.1s;
+      border-color: $secondary-2;
+      box-shadow: 0px 0px 20px $white-secondary-2;
+
+      .latest__item-ico {
+        color: $secondary-2;
       }
     }
 
     &._main {
-      &:before {
-        background: $primary-light;
-      }
+      background: $primary-light;
     }
     &._rose {
-      &:before {
-        background: $white-primary;
-      }
+      background: $white-primary;
     }
   }
 }

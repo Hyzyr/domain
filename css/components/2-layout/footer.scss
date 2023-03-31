@@ -11,7 +11,7 @@
 
       .logo {
         display: flex;
-        width: 135px;
+        width: 160px;
         height: auto;
         img {
           width: 100%;
@@ -177,7 +177,7 @@
         padding: 20px 0;
 
         .logo {
-          width: 120px;
+          width: 140px;
         }
         &-group {
           span {
@@ -240,10 +240,6 @@
   .footer {
     &__inner {
       &-header {
-        .logo {
-          width: 100px;
-        }
-
         &-group {
           span {
             font-size: 12px;
@@ -262,9 +258,7 @@
   .footer {
     &__inner {
       &-header {
-        .logo {
-          width: 90px;
-        }
+      
         &-group {
           span {
             display: none;
