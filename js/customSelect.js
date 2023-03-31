@@ -51,7 +51,7 @@ const customSelectInit = ({
 
     options.querySelectorAll("li").forEach((li, index) => {
       if (select.getAttribute("data-default-index") === index) setSelected(li);
-      if (li.getAttribute("data-default") === "true") {
+      if (li.getAttribute("data-default")) {
         li.removeAttribute("data-default");
         setSelected(li);
       }
@@ -62,7 +62,7 @@ const customSelectInit = ({
 };
 
 customSelectInit({
-  selectClassName: "select",
-  selectedClassName: "select__selected",
-  optionsWrapperClassName: "select__options",
+  selectClassName: "input--select",
+  selectedClassName: "input__selected",
+  optionsWrapperClassName: "input__dropdown",
 });

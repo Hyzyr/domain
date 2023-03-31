@@ -12,20 +12,25 @@
     <div class="main">
       <!-- header start
     =========================================== -->
-      <header class="header">
+      <header class="header" id="header">
         <div class="autoContainer">
+          <div class="header__bg"></div>
           <div class="header__inner">
-            <div class="header__inner-logo">
+            <a href="/" class="header__inner-logo">
               <span class="logo">
                 <img src="images/logo-white.svg" alt="domain" />
               </span>
-            </div>
-            <div class="nav">
+            </a>
+            <div class="nav" id="menu">
               <div class="nav__inner">
                 <div class="nav__inner-group">
-                  <a href="#" class="nav__inner-link">Browse All</a>
-                  <a href="#" class="nav__inner-link">Browse by Industry</a>
-                  <a href="#" class="nav__inner-link">Browse by Style</a>
+                  <a href="./search.html" class="nav__inner-link">Browse All</a>
+                  <a href="./indutries.html" class="nav__inner-link"
+                    >Browse by Industry</a
+                  >
+                  <a href="./search.html" class="nav__inner-link"
+                    >Browse by Style</a
+                  >
                 </div>
                 <div class="nav__inner-group">
                   <a href="#" class="nav__inner-link _ico">
@@ -61,7 +66,7 @@
                 </div>
               </div>
             </div>
-            <button class="burger"></button>
+            <button class="burger" id="menuBtn"></button>
           </div>
         </div>
       </header>
@@ -76,10 +81,10 @@
         =========================================== -->
       <section class="boxSection">
         <div class="autoContainer">
-          <div class="boxSection__inner">
+          <div class="boxSection__inner wow animInUp">
             <form action="#">
               <div class="boxSection__inner-header">
-                <div class="boxSection__inner-header-back">
+                <a href="/" class="boxSection__inner-header-back">
                   <svg
                     width="18"
                     height="18"
@@ -96,19 +101,19 @@
                     />
                   </svg>
                   Back to Home
-                </div>
+                </a>
                 <h1>Brand Details</h1>
               </div>
               <div class="boxSection__form">
                 <div class="boxSection__form-row">
                   <div class="boxSection__form-column">
-                    <div class="input">
+                    <div class="input wow fadeInUp" data-wow-delay=".2s">
                       <input
                         type="text"
                         placeholder="Enter your brand keywords"
                       />
                     </div>
-                    <div class="input">
+                    <div class="input wow fadeInUp" data-wow-delay=".3s">
                       <textarea
                         name=""
                         id=""
@@ -118,40 +123,97 @@
                     </div>
                   </div>
                   <div class="boxSection__form-column">
-                    <div class="input input--select">
+                    <div class="input input--select" data-wow-delay=".2s">
                       <input type="hidden" />
                       <div class="input__selected">TLD Extensions</div>
                       <ul class="input__dropdown">
-                        <li class="input__dropdown-item">Option 1</li>
-                        <li class="input__dropdown-item">Option 2</li>
-                        <li class="input__dropdown-item">Option 3</li>
-                        <li class="input__dropdown-item">Option 4</li>
-                        <li class="input__dropdown-item">Option 5</li>
-                        <li class="input__dropdown-item">Option 6</li>
+                        <li
+                          class="input__dropdown-item"
+                          data-default="true"
+                          data-value="-1"
+                        >
+                          TLD Extensions
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 1">
+                          Option 1
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 2">
+                          Option 2
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 3">
+                          Option 3
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 4">
+                          Option 4
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 5">
+                          Option 5
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 6">
+                          Option 6
+                        </li>
                       </ul>
                     </div>
-                    <div class="input input--select">
+                    <div class="input input--select" data-wow-delay=".4s">
                       <input type="hidden" />
                       <div class="input__selected">Style</div>
                       <ul class="input__dropdown">
-                        <li class="input__dropdown-item">Option 1</li>
-                        <li class="input__dropdown-item">Option 2</li>
-                        <li class="input__dropdown-item">Option 3</li>
-                        <li class="input__dropdown-item">Option 4</li>
-                        <li class="input__dropdown-item">Option 5</li>
-                        <li class="input__dropdown-item">Option 6</li>
+                        <li
+                          class="input__dropdown-item"
+                          data-default="true"
+                          data-value="-1"
+                        >
+                          Style
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 1">
+                          Option 1
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 2">
+                          Option 2
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 3">
+                          Option 3
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 4">
+                          Option 4
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 5">
+                          Option 5
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 6">
+                          Option 6
+                        </li>
                       </ul>
                     </div>
-                    <div class="input input--select">
+                    <div class="input input--select" data-wow-delay=".6s">
                       <input type="hidden" />
                       <div class="input__selected">Industry</div>
                       <ul class="input__dropdown">
-                        <li class="input__dropdown-item">Option 1</li>
-                        <li class="input__dropdown-item">Option 2</li>
-                        <li class="input__dropdown-item">Option 3</li>
-                        <li class="input__dropdown-item">Option 4</li>
-                        <li class="input__dropdown-item">Option 5</li>
-                        <li class="input__dropdown-item">Option 6</li>
+                        <li
+                          class="input__dropdown-item"
+                          data-default="true"
+                          data-value="-1"
+                        >
+                          Industry
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 1">
+                          Option 1
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 2">
+                          Option 2
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 3">
+                          Option 3
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 4">
+                          Option 4
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 5">
+                          Option 5
+                        </li>
+                        <li class="input__dropdown-item" data-value="Option 6">
+                          Option 6
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -201,7 +263,10 @@
             <div class="footer__inner-body">
               <div class="footer__inner-body-subscribe">
                 <h3>Subscribe to our newsletter</h3>
-                <div class="input input--underline input--buttonRight">
+                <div
+                  class="input input--underline input--buttonRight"
+                  data-wow-delay=".8s"
+                >
                   <input type="text" placeholder="Email address" />
                   <button class="button button--primary button--ico _smIco">
                     <span class="custIcon custIcon--right"></span>
@@ -298,8 +363,11 @@
       <!-- footer end
     =========================================== -->
     </div>
+
     <script src="js/slick.jquery.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/WOW.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/customSelect.js"></script>
   </body>
 </html>

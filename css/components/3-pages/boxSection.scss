@@ -19,6 +19,7 @@
         position: absolute;
         left: 0;
         top: 1em;
+        transition: 0.3s ease-out;
 
         //font
         color: $black;
@@ -32,6 +33,15 @@
           width: 0.8em;
           height: 0.8em;
           margin-right: 0.8em;
+        }
+
+        &:hover {
+          color: $secondary;
+          transform: translateX(-5px);
+          padding-right: 5px;
+        }
+        &:active {
+          opacity: 0.8;
         }
       }
       h1 {

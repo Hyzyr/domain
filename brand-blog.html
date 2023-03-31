@@ -12,20 +12,25 @@
     <div class="main">
       <!-- header start
     =========================================== -->
-      <header class="header">
+      <header class="header" id="header">
         <div class="autoContainer">
+          <div class="header__bg"></div>
           <div class="header__inner">
-            <div class="header__inner-logo">
+            <a href="/" class="header__inner-logo">
               <span class="logo">
                 <img src="images/logo-white.svg" alt="domain" />
               </span>
-            </div>
-            <div class="nav">
+            </a>
+            <div class="nav" id="menu">
               <div class="nav__inner">
                 <div class="nav__inner-group">
-                  <a href="#" class="nav__inner-link">Browse All</a>
-                  <a href="#" class="nav__inner-link">Browse by Industry</a>
-                  <a href="#" class="nav__inner-link">Browse by Style</a>
+                  <a href="./search.html" class="nav__inner-link">Browse All</a>
+                  <a href="./indutries.html" class="nav__inner-link"
+                    >Browse by Industry</a
+                  >
+                  <a href="./brand.html" class="nav__inner-link"
+                    >Browse by Style</a
+                  >
                 </div>
                 <div class="nav__inner-group">
                   <a href="#" class="nav__inner-link _ico">
@@ -61,7 +66,7 @@
                 </div>
               </div>
             </div>
-            <button class="burger"></button>
+            <button class="burger" id="menuBtn"></button>
           </div>
         </div>
       </header>
@@ -74,12 +79,12 @@
       </div>
       <!-- boxSection section start
         =========================================== -->
-      <section class="boxSection">
+      <section class="boxSection wow animInUp">
         <div class="autoContainer">
           <div class="boxSection__inner">
             <form action="#">
               <div class="boxSection__inner-header _buttononly">
-                <div class="boxSection__inner-header-back">
+                <a href="/indutries.html" class="boxSection__inner-header-back">
                   <svg
                     width="18"
                     height="18"
@@ -97,10 +102,13 @@
                   </svg>
 
                   Back to all the brands
-                </div>
+                </a>
               </div>
               <div class="boxSection__brand">
-                <div class="boxSection__brand-logo">
+                <div
+                  class="boxSection__brand-logo wow fadeInUp"
+                  data-wow-delay=".2s"
+                >
                   <div class="boxSection__brand-logo-img">
                     <div class="ratioImage ratioImage--contain">
                       <img
@@ -110,7 +118,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="boxSection__brand-header">
+                <div
+                  class="boxSection__brand-header wow fadeInUp"
+                  data-wow-delay=".2s"
+                >
                   <div class="boxSection__brand-header-row">
                     <div class="boxSection__brand-header-column">
                       <h1>Starbucks</h1>
@@ -124,7 +135,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="boxSection__brand-header-row">
+                  <div
+                    class="boxSection__brand-header-row wow fadeInUp"
+                    data-wow-delay=".2s"
+                  >
                     <div class="boxSection__brand-header-column">
                       <h3>$5000</h3>
                       <strong>Estimated Value:</strong>
@@ -168,19 +182,33 @@
         <div class="autoContainer">
           <div class="availability__inner">
             <div class="availability__inner-header">
-              <h2>Check Availability</h2>
-              <p>
+              <h2 class="wow fadeInUp" data-wow-delay=".1s">
+                Check Availability
+              </h2>
+              <p class="wow fadeInUp" data-wow-delay=".2s">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form
               </p>
             </div>
             <ul class="availability__inner-row">
-              <li>.com <span class="custIcon custIcon--tick"></span></li>
-              <li>.store <span class="custIcon custIcon--tick"></span></li>
-              <li>.co <span class="custIcon custIcon--tick"></span></li>
-              <li>.net <span class="custIcon custIcon--tick"></span></li>
-              <li>.shop <span class="custIcon custIcon--tick"></span></li>
-              <li>.io <span class="custIcon custIcon--tick"></span></li>
+              <li class="wow zoomIn" data-wow-delay=".1s">
+                .com <span class="custIcon custIcon--tick"></span>
+              </li>
+              <li class="wow zoomIn" data-wow-delay=".2s">
+                .store <span class="custIcon custIcon--tick"></span>
+              </li>
+              <li class="wow zoomIn" data-wow-delay=".3s">
+                .co <span class="custIcon custIcon--tick"></span>
+              </li>
+              <li class="wow zoomIn" data-wow-delay=".4s">
+                .net <span class="custIcon custIcon--tick"></span>
+              </li>
+              <li class="wow zoomIn" data-wow-delay=".5s">
+                .shop <span class="custIcon custIcon--tick"></span>
+              </li>
+              <li class="wow zoomIn" data-wow-delay=".6s">
+                .io <span class="custIcon custIcon--tick"></span>
+              </li>
             </ul>
           </div>
         </div>
@@ -194,7 +222,7 @@
           <div class="banner__inner">
             <div class="banner__inner-row">
               <div class="banner__inner-column">
-                <div class="banner__inner-column-img _big">
+                <div class="banner__inner-column-img wow fadeIn _big">
                   <img
                     src="images/brand/Starbucks/logo-big.png"
                     alt="Starbucks"
@@ -202,13 +230,13 @@
                 </div>
               </div>
               <div class="banner__inner-column">
-                <div class="banner__inner-column-img">
+                <div class="banner__inner-column-img wow fadeIn">
                   <img
                     src="images/brand/Starbucks/banner.png"
                     alt="Starbucks"
                   />
                 </div>
-                <div class="banner__inner-column-img">
+                <div class="banner__inner-column-img wow fadeIn">
                   <img
                     src="images/brand/Starbucks/mopckup.png"
                     alt="Starbucks"
@@ -227,7 +255,7 @@
         <div class="autoContainer">
           <div class="slider__inner">
             <div class="slider__inner-header">
-              <h2>Similar Brands</h2>
+              <h2 class="wow fadeIn">Similar Brands</h2>
               <div class="slider__inner-header-arrows">
                 <div
                   class="prevArrow button button--ico button--primary _smIco"
@@ -508,6 +536,7 @@
     </div>
     <script src="js/slick.jquery.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/WOW.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -12,20 +12,25 @@
     <div class="main">
       <!-- header start
     =========================================== -->
-      <header class="header">
+      <header class="header" id="header">
         <div class="autoContainer">
+          <div class="header__bg"></div>
           <div class="header__inner">
-            <div class="header__inner-logo">
+            <a href="/" class="header__inner-logo">
               <span class="logo">
                 <img src="images/logo-white.svg" alt="domain" />
               </span>
-            </div>
-            <div class="nav">
+            </a>
+            <div class="nav" id="menu">
               <div class="nav__inner">
                 <div class="nav__inner-group">
-                  <a href="#" class="nav__inner-link">Browse All</a>
-                  <a href="#" class="nav__inner-link">Browse by Industry</a>
-                  <a href="#" class="nav__inner-link">Browse by Style</a>
+                  <a href="./search.html" class="nav__inner-link">Browse All</a>
+                  <a href="./indutries.html" class="nav__inner-link"
+                    >Browse by Industry</a
+                  >
+                  <a href="./brand.html" class="nav__inner-link"
+                    >Browse by Style</a
+                  >
                 </div>
                 <div class="nav__inner-group">
                   <a href="#" class="nav__inner-link _ico">
@@ -61,7 +66,7 @@
                 </div>
               </div>
             </div>
-            <button class="burger"></button>
+            <button class="burger" id="menuBtn"></button>
           </div>
         </div>
       </header>
@@ -76,16 +81,24 @@
             <img src="images/main-background.png" alt="" />
           </div>
           <div class="hero__inner">
-            <h1>
+            <h1 class="wow fadeInUp">
               Let AI create your dream
               <span class="_underline">business brand</span>
               <span>in seconds</span>
             </h1>
             <div class="hero__inner-body">
               <div class="hero__inner-body-banner">
-                <img src="images/home/banner.png" alt="" />
+                <img
+                  src="images/home/banner.png"
+                  alt=""
+                  class="wow zoomIn"
+                  data-wow-delay=".3s"
+                />
               </div>
-              <div class="hero__inner-body-content">
+              <div
+                class="hero__inner-body-content wow fadeInUp"
+                data-wow-delay=".3s"
+              >
                 <ul>
                   <li>Perfect business name.</li>
                   <li>Matching available domain.</li>
@@ -154,14 +167,14 @@
         <div class="autoContainer">
           <div class="latest__inner">
             <div class="latest__inner-header">
-              <h2>Our Latest Industries</h2>
-              <p>
+              <h2 class="wow fadeIn">Our Latest Industries</h2>
+              <p class="wow fadeIn" data-wow-delay=".2s">
                 We are a team of 20+ who are passionate about making the world a
                 better place.
               </p>
             </div>
             <div class="latest__row">
-              <div class="latest__column _lg">
+              <div class="latest__column wow zoomIn _lg" data-wow-delay=".15s">
                 <div class="latest__banner">
                   <div class="latest__banner-content">
                     <div class="latest__banner-content-header">
@@ -196,7 +209,7 @@
                 </div>
               </div>
               <div class="latest__column">
-                <div class="latest__item _main">
+                <div class="latest__item _main wow zoomIn" data-wow-delay=".3s">
                   <p>We have share our journey and some story</p>
                   <strong>Sports</strong>
                   <div class="latest__item-ico">
@@ -217,7 +230,10 @@
                     </svg>
                   </div>
                 </div>
-                <div class="latest__item _rose">
+                <div
+                  class="latest__item _rose wow zoomIn"
+                  data-wow-delay=".45s"
+                >
                   <p>
                     WIt’s a must to that we would like to share our workflow to
                     believe you
@@ -242,7 +258,7 @@
                   </div>
                 </div>
               </div>
-              <div class="latest__column">
+              <div class="latest__column wow zoomIn" data-wow-delay=".6s">
                 <div class="latest__item">
                   <p>
                     2,000+ our team members around the world who create
@@ -282,12 +298,15 @@
             <img src="images/home/elips.svg" alt="elips" />
           </div>
           <div class="build__inner">
-            <h2>
+            <h2 class="wow fadeIn">
               We are here to <br />
               build your brand<span class="greenDot"></span>
             </h2>
             <ul class="build__inner-list">
-              <li class="build__inner-list-item">
+              <li
+                class="build__inner-list-item wow fadeInUp"
+                data-wow-delay=".2s"
+              >
                 <strong>01.</strong>
                 <h3>Generate your perfect Name.</h3>
                 <p>
@@ -295,9 +314,14 @@
                   without coding. Build your next consultancy website within few
                   minutes.
                 </p>
-                <a href="#" class="learnMore"><span></span> LEARN MORE</a>
+                <a href="/brand-blog.html" class="learnMore"
+                  ><span></span> LEARN MORE</a
+                >
               </li>
-              <li class="build__inner-list-item">
+              <li
+                class="build__inner-list-item wow fadeInUp"
+                data-wow-delay=".4s"
+              >
                 <strong>02.</strong>
                 <h3>Register your domain.</h3>
                 <p>
@@ -305,9 +329,14 @@
                   without coding. Build your next consultancy website within few
                   minutes.
                 </p>
-                <a href="#" class="learnMore"><span></span> LEARN MORE</a>
+                <a href="/brand-blog.html" class="learnMore"
+                  ><span></span> LEARN MORE</a
+                >
               </li>
-              <li class="build__inner-list-item">
+              <li
+                class="build__inner-list-item wow fadeInUp"
+                data-wow-delay=".6s"
+              >
                 <strong>03.</strong>
                 <h3>Download your unique logo</h3>
                 <p>
@@ -315,7 +344,9 @@
                   without coding. Build your next consultancy website within few
                   minutes.
                 </p>
-                <a href="#" class="learnMore"><span></span> LEARN MORE</a>
+                <a href="/brand-blog.html" class="learnMore"
+                  ><span></span> LEARN MORE</a
+                >
               </li>
             </ul>
           </div>
@@ -333,8 +364,13 @@
           </div>
           <div class="generate__inner">
             <div class="generate__inner-content">
-              <h2>Generate your <br />business name with AI</h2>
-              <div class="input input--primary input--buttonRight _wideButton">
+              <h2 class="wow fadeInUp">
+                Generate your <br />business name with AI
+              </h2>
+              <div
+                class="input input--primary input--buttonRight _wideButton wow fadeIn"
+                data-wow-delay=".2s"
+              >
                 <input
                   type="text"
                   placeholder="Search by industry, keyword or concept"
@@ -342,7 +378,7 @@
                 <button class="button button--primary">Search</button>
               </div>
             </div>
-            <div class="generate__inner-tags">
+            <div class="generate__inner-tags wow fadeIn" data-wow-delay=".4s">
               <span>Popular Tags:</span>
               <label>Marketing</label>
               <label>Design agency</label>
@@ -359,8 +395,8 @@
         <div class="autoContainer">
           <div class="feedbacks__inner">
             <div class="feedbacks__inner-header">
-              <h2>Our happy clients says about us</h2>
-              <p>
+              <h2 class="wow fadeIn">Our happy clients says about us</h2>
+              <p class="wow fadeIn" data-wow-delay=".2s">
                 These are the opinion of those who have to use Sans from famous
                 people such as Text Software, Director, CEO, Designer and
                 Programmer
@@ -436,11 +472,14 @@
               </div>
             </div>
             <div class="feedbacks__footer">
-              <div class="feedbacks__footer-counter">
+              <div class="feedbacks__footer-counter wow fadeInUp">
                 <h3>More than 1,200+ agencies using Coca Soft</h3>
                 <p>Good team member at a software development agency</p>
               </div>
-              <div class="feedbacks__footer-stars">
+              <div
+                class="feedbacks__footer-stars wow fadeIn"
+                data-wow-delay=".2s"
+              >
                 <div class="feedbacks__footer-stars-item">
                   <strong>4,9</strong>
                   <div class="stars">
@@ -475,7 +514,7 @@
       <footer class="footer">
         <div class="autoContainer">
           <div class="footer__inner">
-            <div class="footer__inner-header">
+            <div class="footer__inner-header wow fadeIn">
               <span class="logo">
                 <img src="images/logo-dark.svg" alt="Domain" />
               </span>
@@ -485,7 +524,7 @@
               </div>
             </div>
             <div class="footer__inner-body">
-              <div class="footer__inner-body-subscribe">
+              <div class="footer__inner-body-subscribe wow fadeIn">
                 <h3>Subscribe to our newsletter</h3>
                 <div class="input input--underline input--buttonRight">
                   <input type="text" placeholder="Email address" />
@@ -495,21 +534,30 @@
                 </div>
               </div>
               <div class="footer__links">
-                <div class="footer__links-column">
+                <div
+                  class="footer__links-column wow fadeInUp"
+                  data-wow-delay=".2s"
+                >
                   <strong class="footer__links-title">Services</strong>
                   <a href="#" class="footer__links-item">Email Marketing</a>
                   <a href="#" class="footer__links-item">Campaigns</a>
                   <a href="#" class="footer__links-item">Branding</a>
                   <a href="#" class="footer__links-item">Offline</a>
                 </div>
-                <div class="footer__links-column">
+                <div
+                  class="footer__links-column wow fadeInUp"
+                  data-wow-delay=".4s"
+                >
                   <strong class="footer__links-title">About</strong>
                   <a href="#" class="footer__links-item">Our Story</a>
                   <a href="#" class="footer__links-item">Benefits</a>
                   <a href="#" class="footer__links-item">Team</a>
                   <a href="#" class="footer__links-item">Careers</a>
                 </div>
-                <div class="footer__links-column">
+                <div
+                  class="footer__links-column wow fadeInUp"
+                  data-wow-delay=".6s"
+                >
                   <strong class="footer__links-title">Help</strong>
                   <a href="#" class="footer__links-item">FAQs</a>
                   <a href="#" class="footer__links-item">Contact Us</a>
@@ -586,6 +634,7 @@
     </div>
     <script src="js/slick.jquery.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/WOW.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
