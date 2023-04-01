@@ -6,6 +6,7 @@
   .autoContainer {
     padding: 0 40px;
   }
+  @include header-1160;
   @include footer-1160;
   @include popup-1160;
   @include index-1160;

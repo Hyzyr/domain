@@ -203,6 +203,7 @@
     border-radius: 100px;
 
     &:hover {
+      opacity: 0.8;
       background: mix($primary, $white, 90%);
     }
   }
@@ -557,6 +558,20 @@
       &:after {
         opacity: 0;
       }
+    }
+  }
+  &--rounded {
+    font-size: inherit;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background: $primary;
+
+    &:after {
+      top: 45%;
+      width: 25%;
+      height: 50%;
+      border-color: $black;
     }
   }
 }

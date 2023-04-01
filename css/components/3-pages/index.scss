@@ -176,6 +176,37 @@
       line-height: 1.6;
       text-align: center;
     }
+    &._lg {
+      max-width: 720px;
+    }
+    &._autoHeight {
+      min-height: unset;
+      margin-bottom: 20px;
+    }
+    &-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-evenly;
+
+      &-item {
+        display: flex;
+        align-items: center;
+        //font
+        color: $white;
+        font-family: $font-secondary;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1;
+        padding: 5px;
+
+        .custIcon {
+          margin-right: 0.6em;
+        }
+      }
+    }
   }
   &--info {
     padding: 175px 0 30px 0;

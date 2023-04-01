@@ -16,11 +16,15 @@
     z-index: 2;
 
     &-logo {
+      display: flex;
+      align-items: center;
       padding-right: 25px;
       border-right: 2px solid rgba($white, 0.27);
+      width: 190px;
 
       .logo {
-        width: 95px;
+        display: block;
+        width: 190px;
 
         img {
           width: 100%;
@@ -189,6 +193,15 @@
   }
 }
 
+@mixin header-1160 {
+  .header {
+    &__inner {
+      &-logo {
+        width: 165px;
+      }
+    }
+  }
+}
 @mixin header-1025 {
   .header {
     padding: 25px 0;
@@ -288,6 +301,13 @@
   }
 }
 @mixin header-768 {
+  .header {
+    &__inner {
+      &-logo {
+        width: 160px;
+      }
+    }
+  }
   .nav {
     &__inner {
       padding: 30px 15px;
