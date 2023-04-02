@@ -275,12 +275,68 @@
       }
     }
   }
+  &--rounded {
+    cursor: pointer;
+    padding: 1.2em 1em;
+    border: 2px solid transparent;
+    background: $white-1;
+    border-radius: 3em;
+    gap: 0.6em;
+
+    //font
+    color: $black-4;
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+
+    &:hover {
+      border-color: rgba($black-secondary, 0.8);
+      .custIcon {
+        opacity: 1;
+        width: 1em;
+        height: 1em;
+      }
+    }
+    &:active {
+      border-color: rgba($secondary, 0.8);
+      .custIcon {
+        color: rgba($secondary, 0.8);
+      }
+    }
+    .custIcon {
+      font-size: 0.67em;
+      opacity: 0;
+      width: 0;
+      height: 0;
+      transition: 0.3s ease-out;
+      flex-shrink: 0;
+
+      // &::after {
+      //   border-color: $black;
+      //   border-width: 4px;
+      //   transform: translate(-50%, -55%) rotate(45deg) scale(0.45);
+      // }
+    }
+  }
   &:active {
     opacity: 0.7;
   }
   &:disabled {
     cursor: default;
     opacity: 0.5 !important;
+  }
+  &--text {
+    //font
+    font-weight: 500;
+    gap: 0.5em;
+    padding: 0.2em;
+    &:hover {
+      color: $secondary;
+    }
+    &._favourite {
+      color: $red;
+    }
   }
 }
 .greenDot {
@@ -448,6 +504,32 @@
       transform: translate(-25%, -50%) rotate(45deg);
     }
   }
+  &--rtArr {
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 75%;
+      height: 75%;
+      background: transparent;
+      border-right: 2px solid currentColor;
+      border-top: 2px solid currentColor;
+      transform: translate(-50%, -50%);
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 2px;
+      background: currentColor;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
   &--right {
     &::before {
       content: "";
@@ -572,69 +654,6 @@
       width: 25%;
       height: 50%;
       border-color: $black;
-    }
-  }
-}
-.radioButton {
-  cursor: pointer;
-  position: relative;
-  font-size: 24px;
-
-  input {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    opacity: 0;
-    border-radius: inherit;
-    &:hover ~ label {
-      border-color: rgba($black-secondary, 0.4);
-    }
-    &:checked ~ label {
-      border-color: rgba($black-secondary, 0.8);
-      .custIcon {
-        opacity: 1;
-        width: 1.2em;
-        height: 1.2em;
-        margin-left: 0.5em;
-      }
-    }
-  }
-  label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1em;
-    border: 2px solid transparent;
-    background: $white-1;
-    border-radius: 3em;
-    transition: 0.3s ease-out;
-
-    //font
-    color: $black-4;
-    font-size: inherit;
-    font-family: $font-primary;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%;
-  }
-  .custIcon {
-    border-radius: 50%;
-    background: $primary;
-    font-size: inherit;
-    opacity: 0;
-    width: 0;
-    height: 0;
-    transition: 0.3s ease-out;
-    flex-shrink: 0;
-
-    &::after {
-      border-color: $black;
-      border-width: 4px;
-      transform: translate(-50%, -55%) rotate(45deg) scale(0.45);
     }
   }
 }

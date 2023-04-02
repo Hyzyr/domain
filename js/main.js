@@ -1,6 +1,13 @@
 var menu = document.getElementById("menu");
 var menuBtn = document.getElementById("menuBtn");
 var body = document.body;
+
+const closeMenu = () => {
+  menu.classList.remove("active");
+  menuBtn.classList.remove("active");
+  body.classList.remove("active");
+};
+
 menuBtn.onclick = function () {
   menu.classList.toggle("active");
   menuBtn.classList.toggle("active");
@@ -8,9 +15,7 @@ menuBtn.onclick = function () {
 };
 window.onclick = function (event) {
   if (event.target == menu) {
-    menu.classList.remove("active");
-    menuBtn.classList.remove("active");
-    body.classList.remove("active");
+    closeMenu();
   }
 };
 
@@ -28,14 +33,16 @@ if (header)
 ///
 /// slick slider
 
-
-
 ///
 ///
 /// tabEvents
-const toggleBody = (isClose) => {
-  if (isClose) document.body.classList.add("active");
-  else document.body.classList.remove("active");
+const toggleBody = (isClosed) => {
+  if (isClosed) {
+    document.body.classList.add("active");
+    if (menu) closeMenu();
+  } else {
+    document.body.classList.remove("active");
+  }
 };
 document.querySelectorAll(`[data-event="tabEvent"]`).forEach((eventBtn) => {
   const tab = document.querySelector(eventBtn.getAttribute("data-tab"));
@@ -52,6 +59,11 @@ document.querySelectorAll(`[data-event="tabEvent"]`).forEach((eventBtn) => {
       }
     };
   }
+});
+document.querySelectorAll(`[data-toggle]`).forEach((toggleBtn) => {
+  console.log("btn ->");
+  toggleBtn.onclick = () =>
+    toggleBtn.classList.toggle(toggleBtn.getAttribute("data-toggle"));
 });
 ///
 ///

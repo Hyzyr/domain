@@ -65,11 +65,20 @@
         line-height: 1;
       }
 
-      &._buttononly {
+      &-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
         margin-bottom: 15px;
-        align-items: flex-start;
         .boxSection__inner-header-back {
           position: unset;
+        }
+
+        .button {
+          font-size: 18px;
+          &.active {
+            color: $red;
+          }
         }
       }
     }
@@ -314,6 +323,12 @@
           align-self: flex-start;
           margin-bottom: 1.5em;
         }
+        &-buttons {
+          .boxSection__inner-header-back {
+            margin-bottom: 0;
+            align-self: center;
+          }
+        }
       }
     }
     &__form {
@@ -422,8 +437,11 @@
         &-back {
           font-size: 16px;
         }
-        &._buttononly {
+        &-buttons {
           margin-bottom: 25px;
+          .button {
+            font-size: 16px;
+          }
         }
       }
     }

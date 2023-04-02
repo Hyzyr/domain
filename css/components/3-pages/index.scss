@@ -126,22 +126,103 @@
           }
         }
       }
-      &-banner {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: calc(100% - 525px - 40px);
-        max-width: 580px;
-        max-height: 100%;
-        transform: translateY(-50%);
+    }
+  }
+  &__banner {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: flex;
+    width: calc(100% - 525px - 40px);
+    max-width: 580px;
+    max-height: 100%;
+    transform: translateY(-50%);
 
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
+    &-box {
+      position: relative;
+      width: 100%;
+      padding-bottom: 80%;
+    }
+    &-item {
+      position: absolute;
+      width: 31%;
+      height: 38%;
+      box-shadow: 0 5px 10px rgba(#000, 0.4);
+      border-radius: 6px;
+      transition: 0.4s ease-out;
+      animation-fill-mode: both;
+      opacity: 0.2;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        object-fit: cover;
+      }
+
+      &:nth-child(1) {
+        top: 10%;
+        left: 3%;
+      }
+      &:nth-child(2) {
+        top: 5%;
+        left: 36%;
+      }
+      &:nth-child(3) {
+        top: 10%;
+        left: 69%;
+      }
+      &:nth-child(4) {
+        top: 55%;
+        left: 3%;
+      }
+      &:nth-child(5) {
+        top: 50%;
+        left: 36%;
+      }
+      &:nth-child(6) {
+        top: 55%;
+        left: 69%;
+      }
+
+      &:hover {
+        transform: translateY(-8%) scale(1.05);
+        z-index: 2;
+        box-shadow: 0 8px 10px rgba(#000, 0.4);
+        .hero__banner-item-info {
+          transform: translate(-50%, -40%);
+        }
+      }
+      &.active {
+        transform: translateY(-20%) scale(1.4);
+        z-index: 1;
+        box-shadow: 0 8px 20px rgba(#000, 0.4);
+        opacity: 1;
+      }
+
+      &-info {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        color: red;
+        background: $white;
+        background: $white;
+        box-shadow: 0px 21px 28px rgba($black-4, 0.2);
+        border-radius: 8px;
+        padding: 1em 0.7em;
+        transform: translate(-50%, -50%);
+        transition: 0.4s ease-out;
+
+        //font
+        color: $black-4;
+        font-family: $font-primary;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1;
+
+        &:hover {
+          color: rgba($black-4, 0.6);
         }
       }
     }
@@ -861,11 +942,9 @@
       h1 {
         font-size: 46px;
       }
-      &-body {
-        &-banner {
-          width: calc(55% - 40px);
-        }
-      }
+    }
+    &__banner {
+      width: calc(55% - 40px);
     }
   }
   .latest {
@@ -947,10 +1026,10 @@
             margin-bottom: 20px;
           }
         }
-        &-banner {
-          width: calc(55% - 20px);
-        }
       }
+    }
+    &__banner {
+      width: calc(55% - 20px);
     }
     &__info {
       h1 {
@@ -1021,14 +1100,11 @@
       padding-right: unset;
       width: 60%;
       margin-right: auto;
-
-      &-body {
-        &-banner {
-          width: 500px;
-          left: 100%;
-          transform: translate(10%, -50%);
-        }
-      }
+    }
+    &__banner {
+      width: 500px;
+      left: 100%;
+      transform: translate(10%, -50%);
     }
     &__info {
       h1 {
@@ -1284,13 +1360,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
         gap: 30px;
 
-        &-banner {
-          width: 100%;
-          position: unset;
-          transform: unset;
-        }
         &-content {
           width: 100%;
           max-width: 400px;
@@ -1307,6 +1379,16 @@
           &-counter {
             justify-content: center;
           }
+        }
+      }
+    }
+    &__banner {
+      width: 100%;
+      position: unset;
+      transform: unset;
+      &-item {
+        &-info {
+          font-size: 12px;
         }
       }
     }
@@ -1415,6 +1497,13 @@
           .input {
             font-size: 12px;
           }
+        }
+      }
+    }
+    &__banner {
+      &-item {
+        &-info {
+          font-size: 11px;
         }
       }
     }
@@ -1584,6 +1673,15 @@
   }
 }
 @mixin index-460 {
+  .hero {
+    &__banner {
+      &-item {
+        &-info {
+          font-size: 10px;
+        }
+      }
+    }
+  }
   .latest {
     padding: 40px 0 50px;
     &__row {
@@ -1616,6 +1714,12 @@
       &:after {
         bottom: 1.5em;
         right: 1.5em;
+      }
+      p {
+        font-size: 12px;
+      }
+      strong {
+        font-size: 20px;
       }
     }
   }

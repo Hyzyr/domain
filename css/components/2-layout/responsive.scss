@@ -56,6 +56,9 @@
   @include boxSection-580;
   @include searchSection-580;
   @include index-580;
+  ._hideMob {
+    display: none;
+  }
 }
 @media (max-width: 460px) {
   @include footer-460;
